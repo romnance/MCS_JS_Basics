@@ -10,14 +10,10 @@ let computer = Math.floor(Math.random() * 3);
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
 if (player == computer) {console.log('draw');}
 
-if (player == 0 && computer == 1 
-|| player == 1 && computer == 2 
-|| player == 2 && computer == 0) 
+if (player == 0 && computer == 1 || player == 1 && computer == 2 || player == 2 && computer == 0) 
 {console.log('player win');}
 
-if (player == 0  && computer == 2 
-|| player == 1 && computer == 0 
-|| player == 2 && computer == 1) 
+if (player == 0  && computer == 2 || player == 1 && computer == 0 || player == 2 && computer == 1) 
 {console.log('computer win');}
 
 
