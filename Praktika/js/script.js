@@ -1,16 +1,25 @@
-let totalCash = prompt('How much cash do you got?');
-Number(totalCash);
+function haveEnough(totalCash,watchesCount,earringsCount,watchesSum,earringsSum,answer) {
+	totalCash = Number(prompt('How much cash do you got?'));
 
-let watchesCount = prompt('How many watches you want?');
-Number(watchesCount);
+	watchesCount = Number(prompt('How many watches you want?'));
 
-let earringsCount = prompt('How many pairs of earrings you want?');
-Number(earringsCount);
+	earringsCount = Number(prompt('How many pairs of earrings you want?'));
 
-let watchesSum = Number(prompt('How much does one watch cost?'))*watchesCount;
+	watchesSum = Number(prompt('How much does one watch cost?'))*watchesCount;
 
-let earringsSum = Number(prompt('How much does one pair of earrings cost?'))*earringsCount;
+	earringsSum = Number(prompt('How much does one pair of earrings cost?'))*earringsCount;
 
-let answer = totalCash > earringsSum + watchesSum;
+	answer = totalCash > earringsSum + watchesSum;
 
-document.body.innerHTML="<h1>" + answer + "</h1>";
+	if (answer == true) {
+		return ('Enough $$$');
+	} else {
+		return ('Not enough $$$');
+	}
+}
+
+document.body.innerHTML = "<h1>" + haveEnough() + "</h1>";
+
+
+
+
