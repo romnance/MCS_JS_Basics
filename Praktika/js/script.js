@@ -19,7 +19,3 @@ function haveEnough(totalCash,watchesCount,earringsCount,watchesSum,earringsSum,
 }
 
 document.body.innerHTML = "<h1>" + haveEnough() + "</h1>";
-
-
-
-
