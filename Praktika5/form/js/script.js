@@ -4,5 +4,6 @@ const insert = document.querySelector('.total');
 
 form.onsubmit = function(e) {
 	e.preventDefault();
-	insert.innerHTML = Math.sin(form.elements.ugol.value);
+	insert.innerHTML = Math.sin(form.elements.ugol.value * Math.PI / 180); //высчитывает в градусах
 }
+
