@@ -1,0 +1,12 @@
+@import url(reset.css);
+
+body {
+	background-color: lightgrey;
+	font-family: sans-serif;
+}
+
+div {
+	width:10vw;
+	margin-left: 48vw;
+}
+
