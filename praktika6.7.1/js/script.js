@@ -2,21 +2,21 @@ class Tiger {
 	constructor(name) {
 		this.name = name;
 	}
-	feedCat() {
-		console.log('Purrrrrr');
+	feedCat(Purrrrrr) {
+		return('Purrrrrr');
 	}
 }
 
 class angryTiger extends Tiger {
-	throwDart() {
-		console.log('ZzZzzZzZz');
+	throwDart(ZzZzzZzZz) {
+		return('ZzZzzZzZz');
 	}
 }
 
-const Tiger1 = new Tiger('Chuck');
-console.log(Tiger1);
-console.log(Tiger1.feedCat());
+const happyTiger = new Tiger('Chuck');
+console.log(happyTiger);
+console.log(happyTiger.feedCat());
 
-const Tiger2 = new angryTiger('Norris');
-console.log(Tiger2);
-console.log(Tiger2.throwDart());
+const hungryTiger = new angryTiger('Norris');
+console.log(hungryTiger);
+console.log(hungryTiger.throwDart());
