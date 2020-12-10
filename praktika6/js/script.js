@@ -56,15 +56,15 @@ form.onsubmit = function(e) {
 	let money = form.elements.money.value;
 	const exmp = new Person(name)
 
-	if (cat == 'yes') {
+	if (cat === 'yes') {
 		exmp.hasCat();	
 	}
 
-	if (rest == 'yes') {
+	if (rest === 'yes') {
 		exmp.hasRest();
 	}
 
-	if (money == 'yes') {
+	if (money === 'yes') {
 		exmp.hasMoney();
 	}
 
