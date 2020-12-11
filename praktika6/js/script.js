@@ -50,11 +50,11 @@ class Person {
 const form = document.forms[0];
 form.onsubmit = function(e) {
 	e.preventDefault();
-	name = form.elements.name.value;
+	let name = form.elements.name.value;
 	let cat = form.elements.cat.value;
 	let rest = form.elements.rest.value;
 	let money = form.elements.money.value;
-	const exmp = new Person(name)
+	const exmp = new Person(name);
 
 	if (cat === 'yes') {
 		exmp.hasCat();	
